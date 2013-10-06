@@ -16,13 +16,51 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	
     // Override point for customization after application launch.
+	navLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 150, 22)];
+	navLabel.backgroundColor = [UIColor clearColor];
+	navLabel.textColor = [UIColor whiteColor];
+	navLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:18];
+	navLabel.textAlignment = NSTextAlignmentCenter;
+	navLabel.shadowColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1];
+	navLabel.shadowOffset = CGSizeMake(0, 1.0);
+	main_center = [[UIView alloc]initWithFrame:CGRectMake(85, 0, 150, 44)];
+	
+	drawerController = [[MMDrawerController alloc] init];
+	drawerController.statusBarViewBackgroundColor = [UIColor blackColor];
+    [drawerController setRestorationIdentifier:@"netra"];
+    [drawerController setMaximumRightDrawerWidth:270];
+	[drawerController setMaximumLeftDrawerWidth:270];
+    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+	[drawerController setShouldStretchDrawer:FALSE];
+	[drawerController setDrawerVisualStateBlock:[MMDrawerVisualState slideAndScaleVisualStateBlock]];
+	[drawerController setShowsShadow:NO];
+	drawerController.showsStatusBarBackgroundView = YES;
+	
+	[self setCenter:@"mstockTradeViewController" title:@"Live Stocks"];
     self.window.backgroundColor = [UIColor whiteColor];
+	self.window.rootViewController = drawerController;
     [self.window makeKeyAndVisible];
     return YES;
 }
-
+-(void)setCenter:(NSString *)center title:(NSString *)title{
+	navigation = [[UINavigationController alloc]initWithRootViewController:[[NSClassFromString(center) alloc]init]];
+	[drawerController setCenterViewController:navigation withCloseAnimation:YES completion:nil];
+	[drawerController setRightDrawerViewController:[[NSClassFromString(@"rightViewController") alloc]init]];
+	[drawerController setLeftDrawerViewController:[[NSClassFromString(@"leftviewController") alloc]init]];
+	[navigation.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar2"] forBarMetrics:UIBarMetricsDefault];
+	
+	main_center.backgroundColor = [UIColor clearColor];
+	[main_center addSubview:navLabel];
+	[navigation.navigationBar addSubview:main_center];
+	navLabel.text = title;
+	//navLabel.text = [title uppercaseString];
+	//self.lastController = center;
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

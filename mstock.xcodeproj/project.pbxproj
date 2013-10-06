@@ -22,6 +22,19 @@
 		D0AFE1FE1800842E0081CD83 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFE1E21800842E0081CD83 /* CoreData.framework */; };
 		D0AFE2061800842F0081CD83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE2041800842F0081CD83 /* InfoPlist.strings */; };
 		D0AFE2081800842F0081CD83 /* mstockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE2071800842F0081CD83 /* mstockTests.m */; };
+		D0AFE22D180167D80081CD83 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE224180167D80081CD83 /* MMDrawerBarButtonItem.m */; };
+		D0AFE22E180167D80081CD83 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE227180167D80081CD83 /* MMDrawerController.m */; };
+		D0AFE22F180167D80081CD83 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE229180167D80081CD83 /* MMDrawerVisualState.m */; };
+		D0AFE230180167D80081CD83 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE22B180167D80081CD83 /* UIViewController+MMDrawerController.m */; };
+		D0AFE2341801689F0081CD83 /* navbar2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE2331801689F0081CD83 /* navbar2@2x.png */; };
+		D0AFE240180169B90081CD83 /* mstockTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE23F180169B90081CD83 /* mstockTradeViewController.m */; };
+		D0AFE241180169B90081CD83 /* mstockTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE23F180169B90081CD83 /* mstockTradeViewController.m */; };
+		D0AFE244180171C80081CD83 /* leftviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE243180171C80081CD83 /* leftviewController.m */; };
+		D0AFE245180171C80081CD83 /* leftviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE243180171C80081CD83 /* leftviewController.m */; };
+		D0AFE248180171D60081CD83 /* rightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE247180171D60081CD83 /* rightViewController.m */; };
+		D0AFE249180171D60081CD83 /* rightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE247180171D60081CD83 /* rightViewController.m */; };
+		D0AFE24D1801A1D70081CD83 /* mstockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE24C1801A1D70081CD83 /* mstockCell.m */; };
+		D0AFE24E1801A1D70081CD83 /* mstockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE24C1801A1D70081CD83 /* mstockCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +66,24 @@
 		D0AFE2031800842F0081CD83 /* mstockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mstockTests-Info.plist"; sourceTree = "<group>"; };
 		D0AFE2051800842F0081CD83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0AFE2071800842F0081CD83 /* mstockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mstockTests.m; sourceTree = "<group>"; };
+		D0AFE223180167D80081CD83 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		D0AFE224180167D80081CD83 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		D0AFE225180167D80081CD83 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		D0AFE226180167D80081CD83 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		D0AFE227180167D80081CD83 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		D0AFE228180167D80081CD83 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		D0AFE229180167D80081CD83 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		D0AFE22A180167D80081CD83 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		D0AFE22B180167D80081CD83 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		D0AFE2331801689F0081CD83 /* navbar2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar2@2x.png"; sourceTree = "<group>"; };
+		D0AFE23E180169B90081CD83 /* mstockTradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mstockTradeViewController.h; sourceTree = "<group>"; };
+		D0AFE23F180169B90081CD83 /* mstockTradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mstockTradeViewController.m; sourceTree = "<group>"; };
+		D0AFE242180171C80081CD83 /* leftviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftviewController.h; sourceTree = "<group>"; };
+		D0AFE243180171C80081CD83 /* leftviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftviewController.m; sourceTree = "<group>"; };
+		D0AFE246180171D60081CD83 /* rightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rightViewController.h; sourceTree = "<group>"; };
+		D0AFE247180171D60081CD83 /* rightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightViewController.m; sourceTree = "<group>"; };
+		D0AFE24B1801A1D70081CD83 /* mstockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mstockCell.h; sourceTree = "<group>"; };
+		D0AFE24C1801A1D70081CD83 /* mstockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mstockCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +146,10 @@
 		D0AFE1E41800842E0081CD83 /* mstock */ = {
 			isa = PBXGroup;
 			children = (
+				D0AFE21F180167D80081CD83 /* assets */,
+				D0AFE220180167D80081CD83 /* controller */,
+				D0AFE221180167D80081CD83 /* library */,
+				D0AFE22C180167D80081CD83 /* view */,
 				D0AFE1ED1800842E0081CD83 /* mstockAppDelegate.h */,
 				D0AFE1EE1800842E0081CD83 /* mstockAppDelegate.m */,
 				D0AFE1F31800842E0081CD83 /* Images.xcassets */,
@@ -151,6 +186,156 @@
 				D0AFE2041800842F0081CD83 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0AFE21F180167D80081CD83 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE2311801689F0081CD83 /* font */,
+				D0AFE2321801689F0081CD83 /* img */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		D0AFE220180167D80081CD83 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D0AFE221180167D80081CD83 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE222180167D80081CD83 /* MMDrawerController */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		D0AFE222180167D80081CD83 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE223180167D80081CD83 /* MMDrawerBarButtonItem.h */,
+				D0AFE224180167D80081CD83 /* MMDrawerBarButtonItem.m */,
+				D0AFE225180167D80081CD83 /* MMDrawerController+Subclass.h */,
+				D0AFE226180167D80081CD83 /* MMDrawerController.h */,
+				D0AFE227180167D80081CD83 /* MMDrawerController.m */,
+				D0AFE228180167D80081CD83 /* MMDrawerVisualState.h */,
+				D0AFE229180167D80081CD83 /* MMDrawerVisualState.m */,
+				D0AFE22A180167D80081CD83 /* UIViewController+MMDrawerController.h */,
+				D0AFE22B180167D80081CD83 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		D0AFE22C180167D80081CD83 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE235180168E00081CD83 /* center */,
+				D0AFE236180168E00081CD83 /* left */,
+				D0AFE237180168E00081CD83 /* right */,
+				D0AFE238180168E00081CD83 /* shared */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D0AFE2311801689F0081CD83 /* font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		D0AFE2321801689F0081CD83 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE2331801689F0081CD83 /* navbar2@2x.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		D0AFE235180168E00081CD83 /* center */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE2391801699E0081CD83 /* charts */,
+				D0AFE23A1801699E0081CD83 /* companyInfo */,
+				D0AFE23B1801699E0081CD83 /* completebook */,
+				D0AFE23C1801699E0081CD83 /* running_trade */,
+				D0AFE23D1801699E0081CD83 /* stockwatch */,
+			);
+			path = center;
+			sourceTree = "<group>";
+		};
+		D0AFE236180168E00081CD83 /* left */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE242180171C80081CD83 /* leftviewController.h */,
+				D0AFE243180171C80081CD83 /* leftviewController.m */,
+			);
+			path = left;
+			sourceTree = "<group>";
+		};
+		D0AFE237180168E00081CD83 /* right */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE246180171D60081CD83 /* rightViewController.h */,
+				D0AFE247180171D60081CD83 /* rightViewController.m */,
+			);
+			path = right;
+			sourceTree = "<group>";
+		};
+		D0AFE238180168E00081CD83 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		D0AFE2391801699E0081CD83 /* charts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = charts;
+			sourceTree = "<group>";
+		};
+		D0AFE23A1801699E0081CD83 /* companyInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = companyInfo;
+			sourceTree = "<group>";
+		};
+		D0AFE23B1801699E0081CD83 /* completebook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = completebook;
+			sourceTree = "<group>";
+		};
+		D0AFE23C1801699E0081CD83 /* running_trade */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE24A1801A1B60081CD83 /* rt_cell */,
+				D0AFE23E180169B90081CD83 /* mstockTradeViewController.h */,
+				D0AFE23F180169B90081CD83 /* mstockTradeViewController.m */,
+			);
+			path = running_trade;
+			sourceTree = "<group>";
+		};
+		D0AFE23D1801699E0081CD83 /* stockwatch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stockwatch;
+			sourceTree = "<group>";
+		};
+		D0AFE24A1801A1B60081CD83 /* rt_cell */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFE24B1801A1D70081CD83 /* mstockCell.h */,
+				D0AFE24C1801A1D70081CD83 /* mstockCell.m */,
+			);
+			path = rt_cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AFE2341801689F0081CD83 /* navbar2@2x.png in Resources */,
 				D0AFE1E91800842E0081CD83 /* InfoPlist.strings in Resources */,
 				D0AFE1F41800842E0081CD83 /* Images.xcassets in Resources */,
 			);
@@ -249,8 +435,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AFE244180171C80081CD83 /* leftviewController.m in Sources */,
+				D0AFE22F180167D80081CD83 /* MMDrawerVisualState.m in Sources */,
 				D0AFE1EB1800842E0081CD83 /* main.m in Sources */,
+				D0AFE230180167D80081CD83 /* UIViewController+MMDrawerController.m in Sources */,
+				D0AFE22E180167D80081CD83 /* MMDrawerController.m in Sources */,
+				D0AFE22D180167D80081CD83 /* MMDrawerBarButtonItem.m in Sources */,
+				D0AFE24D1801A1D70081CD83 /* mstockCell.m in Sources */,
 				D0AFE1EF1800842E0081CD83 /* mstockAppDelegate.m in Sources */,
+				D0AFE248180171D60081CD83 /* rightViewController.m in Sources */,
+				D0AFE240180169B90081CD83 /* mstockTradeViewController.m in Sources */,
 				D0AFE1F21800842E0081CD83 /* mstock.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +453,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AFE245180171C80081CD83 /* leftviewController.m in Sources */,
+				D0AFE24E1801A1D70081CD83 /* mstockCell.m in Sources */,
+				D0AFE249180171D60081CD83 /* rightViewController.m in Sources */,
+				D0AFE241180169B90081CD83 /* mstockTradeViewController.m in Sources */,
 				D0AFE2081800842F0081CD83 /* mstockTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +650,7 @@
 				D0AFE20D1800842F0081CD83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0AFE20E1800842F0081CD83 /* Build configuration list for PBXNativeTarget "mstockTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +659,7 @@
 				D0AFE2101800842F0081CD83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

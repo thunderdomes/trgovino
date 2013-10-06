@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface mstockAppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+	UINavigationController *navigation;
+	MMDrawerController *drawerController;
+	UILabel *navLabel;
+	UIView *main_center;
+	
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
@@ -18,5 +24,5 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-
+- (void)setCenter:(NSString *)center title:(NSString*)title;
 @end
