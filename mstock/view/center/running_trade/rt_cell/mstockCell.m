@@ -19,7 +19,7 @@
 		self.rtStockCode.text = @"AALI";
 		self.rtStockCode.backgroundColor = [UIColor clearColor];
 		self.rtStockCode.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:18];
-		self.rtStockCode.textColor = [UIColor orangeColor];
+		self.rtStockCode.textColor =[UIColor whiteColor];
 		
 		self.rtStockName = [[UILabel alloc]initWithFrame:CGRectMake(10, 40, 240, 30)];
 		self.rtStockName.text = @"Astra Argo Lestari";
