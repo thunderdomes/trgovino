@@ -20,12 +20,14 @@
     if (self) {
         // Custom initialization
 		self.view.backgroundColor = [UIColor colorWithRed:0.106 green:0.133 blue:0.149 alpha:1];
-		livetrade = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 44)];
+		livetrade = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 65)];
 		livetrade.separatorInset = UIEdgeInsetsZero;
 		livetrade.backgroundColor = [UIColor colorWithRed:0.106 green:0.133 blue:0.149 alpha:1];
 		livetrade.delegate = self;
 		livetrade.separatorColor = [UIColor colorWithRed:0.161 green:0.18 blue:0.216 alpha:1];
 		livetrade.dataSource = self;
+		stockHeader = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 30)];
+		stockHeader.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"stockQ"]];
 		[self.view addSubview:livetrade];
     }
     return self;
@@ -39,8 +41,22 @@
 
 	return 100;
 }
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+	
+	stockHeader = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 30)];
+	stockHeader.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"stockQ"]];
+	
+    return stockHeader;
+	
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30;
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-	return 70;
+	return 60;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 	

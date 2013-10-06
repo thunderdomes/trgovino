@@ -35,6 +35,8 @@
 		D0AFE249180171D60081CD83 /* rightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE247180171D60081CD83 /* rightViewController.m */; };
 		D0AFE24D1801A1D70081CD83 /* mstockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE24C1801A1D70081CD83 /* mstockCell.m */; };
 		D0AFE24E1801A1D70081CD83 /* mstockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AFE24C1801A1D70081CD83 /* mstockCell.m */; };
+		D0AFE2501801B4C20081CD83 /* stockQ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE24F1801B4C20081CD83 /* stockQ@2x.png */; };
+		D0AFE2511801B4C20081CD83 /* stockQ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AFE24F1801B4C20081CD83 /* stockQ@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,7 @@
 		D0AFE247180171D60081CD83 /* rightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rightViewController.m; sourceTree = "<group>"; };
 		D0AFE24B1801A1D70081CD83 /* mstockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mstockCell.h; sourceTree = "<group>"; };
 		D0AFE24C1801A1D70081CD83 /* mstockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mstockCell.m; sourceTree = "<group>"; };
+		D0AFE24F1801B4C20081CD83 /* stockQ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stockQ@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,7 @@
 		D0AFE2321801689F0081CD83 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				D0AFE24F1801B4C20081CD83 /* stockQ@2x.png */,
 				D0AFE2331801689F0081CD83 /* navbar2@2x.png */,
 			);
 			path = img;
@@ -417,6 +421,7 @@
 				D0AFE2341801689F0081CD83 /* navbar2@2x.png in Resources */,
 				D0AFE1E91800842E0081CD83 /* InfoPlist.strings in Resources */,
 				D0AFE1F41800842E0081CD83 /* Images.xcassets in Resources */,
+				D0AFE2501801B4C20081CD83 /* stockQ@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0AFE2061800842F0081CD83 /* InfoPlist.strings in Resources */,
+				D0AFE2511801B4C20081CD83 /* stockQ@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

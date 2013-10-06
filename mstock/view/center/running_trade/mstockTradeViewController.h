@@ -11,5 +11,6 @@
 @interface mstockTradeViewController : UIViewController< UITableViewDataSource, UITableViewDelegate>
 {
 	UITableView *livetrade;
+	UIView *stockHeader;
 }
 @end
