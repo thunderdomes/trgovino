@@ -11,10 +11,11 @@
 #endif
 
 #ifdef __OBJC__
-	#import <UIKit/UIKit.h>
-	#import <Foundation/Foundation.h>
-	#import <CoreData/CoreData.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 #import "MMDrawerVisualState.h"
 #import "MMDrawerController.h"
 #import "UIViewController+MMDrawerController.h"
+#import "mstockCell.h"
 #endif

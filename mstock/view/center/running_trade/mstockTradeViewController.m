@@ -22,6 +22,7 @@
 		self.view.backgroundColor = [UIColor colorWithRed:0.106 green:0.133 blue:0.149 alpha:1];
 		livetrade = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 44)];
 		livetrade.separatorInset = UIEdgeInsetsZero;
+		livetrade.backgroundColor = [UIColor colorWithRed:0.106 green:0.133 blue:0.149 alpha:1];
 		livetrade.delegate = self;
 		livetrade.separatorColor = [UIColor colorWithRed:0.161 green:0.18 blue:0.216 alpha:1];
 		livetrade.dataSource = self;
@@ -51,9 +52,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	static NSString *cells = @"bantingCell";
-	UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
+	mstockCell *cell = [[mstockCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
 	if(cell ==Nil){
-		cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
+		cell = [[mstockCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cells];
 	}
 	if (indexPath.row % 2 ==0) {
 		cell.contentView.backgroundColor  = [UIColor colorWithRed:0.078 green:0.098 blue:0.122 alpha:1];
@@ -61,7 +62,6 @@
 	else{
 		cell.contentView.backgroundColor  = [UIColor colorWithRed:0.059 green:0.071 blue:0.09 alpha:1];
 	}
-	cell.textLabel.text = @"AAPL";
 	return cell;
 }
 - (void)viewDidLoad
