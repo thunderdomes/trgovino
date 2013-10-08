@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface rightViewController : UIViewController
-
+@interface rightViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+	UITableView *news;
+}
 @end

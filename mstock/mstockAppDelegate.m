@@ -36,6 +36,7 @@
 	[drawerController setMaximumLeftDrawerWidth:270];
     [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+
 	[drawerController setShouldStretchDrawer:FALSE];
 	[drawerController setDrawerVisualStateBlock:[MMDrawerVisualState slideAndScaleVisualStateBlock]];
 	[drawerController setShowsShadow:NO];

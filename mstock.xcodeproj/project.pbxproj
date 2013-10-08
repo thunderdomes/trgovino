@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0A190011803CC98006BE759 /* leftmenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0A190001803CC98006BE759 /* leftmenu.plist */; };
+		D0A1900A1803E4EE006BE759 /* newsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A190091803E4EE006BE759 /* newsCell.m */; };
+		D0A1900D1803E7CC006BE759 /* newsFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A1900C1803E7CC006BE759 /* newsFetch.m */; };
 		D0AFE1DD1800842E0081CD83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFE1DC1800842E0081CD83 /* Foundation.framework */; };
 		D0AFE1DF1800842E0081CD83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFE1DE1800842E0081CD83 /* CoreGraphics.framework */; };
 		D0AFE1E11800842E0081CD83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AFE1E01800842E0081CD83 /* UIKit.framework */; };
@@ -50,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0A190001803CC98006BE759 /* leftmenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = leftmenu.plist; sourceTree = "<group>"; };
+		D0A190081803E4EE006BE759 /* newsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsCell.h; sourceTree = "<group>"; };
+		D0A190091803E4EE006BE759 /* newsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsCell.m; sourceTree = "<group>"; };
+		D0A1900B1803E7CC006BE759 /* newsFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsFetch.h; sourceTree = "<group>"; };
+		D0A1900C1803E7CC006BE759 /* newsFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsFetch.m; sourceTree = "<group>"; };
 		D0AFE1D91800842E0081CD83 /* mstock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mstock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AFE1DC1800842E0081CD83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0AFE1DE1800842E0081CD83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0A190021803DB4D006BE759 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				D0A1900B1803E7CC006BE759 /* newsFetch.h */,
+				D0A1900C1803E7CC006BE759 /* newsFetch.m */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		D0A190071803E4EE006BE759 /* newsCell */ = {
+			isa = PBXGroup;
+			children = (
+				D0A190081803E4EE006BE759 /* newsCell.h */,
+				D0A190091803E4EE006BE759 /* newsCell.m */,
+			);
+			path = newsCell;
+			sourceTree = "<group>";
+		};
 		D0AFE1D01800842E0081CD83 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +195,7 @@
 				D0AFE1E71800842E0081CD83 /* InfoPlist.strings */,
 				D0AFE1EA1800842E0081CD83 /* main.m */,
 				D0AFE1EC1800842E0081CD83 /* mstock-Prefix.pch */,
+				D0A190001803CC98006BE759 /* leftmenu.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,6 +237,7 @@
 		D0AFE221180167D80081CD83 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				D0A190021803DB4D006BE759 /* helper */,
 				D0AFE222180167D80081CD83 /* MMDrawerController */,
 			);
 			path = library;
@@ -282,6 +310,7 @@
 		D0AFE237180168E00081CD83 /* right */ = {
 			isa = PBXGroup;
 			children = (
+				D0A190071803E4EE006BE759 /* newsCell */,
 				D0AFE246180171D60081CD83 /* rightViewController.h */,
 				D0AFE247180171D60081CD83 /* rightViewController.m */,
 			);
@@ -420,6 +449,7 @@
 			files = (
 				D0AFE2341801689F0081CD83 /* navbar2@2x.png in Resources */,
 				D0AFE1E91800842E0081CD83 /* InfoPlist.strings in Resources */,
+				D0A190011803CC98006BE759 /* leftmenu.plist in Resources */,
 				D0AFE1F41800842E0081CD83 /* Images.xcassets in Resources */,
 				D0AFE2501801B4C20081CD83 /* stockQ@2x.png in Resources */,
 			);
@@ -443,9 +473,11 @@
 			files = (
 				D0AFE244180171C80081CD83 /* leftviewController.m in Sources */,
 				D0AFE22F180167D80081CD83 /* MMDrawerVisualState.m in Sources */,
+				D0A1900A1803E4EE006BE759 /* newsCell.m in Sources */,
 				D0AFE1EB1800842E0081CD83 /* main.m in Sources */,
 				D0AFE230180167D80081CD83 /* UIViewController+MMDrawerController.m in Sources */,
 				D0AFE22E180167D80081CD83 /* MMDrawerController.m in Sources */,
+				D0A1900D1803E7CC006BE759 /* newsFetch.m in Sources */,
 				D0AFE22D180167D80081CD83 /* MMDrawerBarButtonItem.m in Sources */,
 				D0AFE24D1801A1D70081CD83 /* mstockCell.m in Sources */,
 				D0AFE1EF1800842E0081CD83 /* mstockAppDelegate.m in Sources */,
