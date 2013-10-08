@@ -7,7 +7,7 @@
 //
 
 #import "rightViewController.h"
-
+#import "newsCell.h"
 @interface rightViewController ()
 
 @end
@@ -40,11 +40,11 @@
 	return 10;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-	UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"A"];
+	newsCell *cell = [[newsCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"A"];
 	if (cell == Nil) {
-		cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"A"];
+		cell = [[newsCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"A"];
 	}
-	cell.textLabel.text =@"Menu";
+	cell.newsTitle.text= @"Marsinah";
 	return cell;
 	
 }
