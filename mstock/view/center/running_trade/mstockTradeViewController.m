@@ -85,7 +85,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+-(void) fetchData{
+	//url
 
+}
+-(void) fetchdataYahoo{
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
